@@ -111,7 +111,7 @@ execjs._exceptions.ProgramError: SyntaxError: 缺少标识符
 
 ![](./img/README/image-20230225015343018.png)
 
-请您前往https://nodejs.org/en/下载Node.js进行安装，安装后重启电脑即可打开和使用。
+请您前往https://nodejs.org/en/ 下载Node.js进行安装，安装后重启电脑即可打开和使用。
 
 ## 其他
 
