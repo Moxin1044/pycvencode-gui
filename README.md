@@ -88,6 +88,33 @@ Python3.10：758-765行。
 
 因为我引用了Logo文件，所以如果您将logo.ico删掉是会由tk报错的哦！请您加上我们的logo，非常感谢！
 
+## 缺少标识符
+
+如果您遇到以下问题：
+
+```shell
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "tkinter\__init__.py", line 1948, in __call__
+  File "main.py", line 62, in encode
+  File "qsnctf\misc.py", line 20, in Chinese_socialism_encode
+    return str(content.call('encode', string))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "execjs\_abstract_runtime_context.py", line 37, in call
+  File "execjs\_external_runtime.py", line 92, in _call
+  File "execjs\_external_runtime.py", line 78, in _eval
+  File "execjs\_abstract_runtime_context.py", line 18, in exec_
+  File "execjs\_external_runtime.py", line 88, in _exec_
+  File "execjs\_external_runtime.py", line 167, in _extract_result
+execjs._exceptions.ProgramError: SyntaxError: 缺少标识符
+```
+
+![](./img/README/image-20230225015343018.png)
+
+请您前往https://nodejs.org/en/下载Node.js进行安装，安装后重启电脑即可打开和使用。
+
 ## 其他
 
-如果有其他报错问题，可以提交Issues给我们进行反馈哦。
+为了抓取可能出现的bug，我们在第一次编译的时候没有关闭命令窗口，如果您遇到了其他问题，命令窗口将会是解决问题的重要线索。如果有其他报错问题，可以提交Issues给我们进行反馈哦。
+
+如果超过30天没有Issues提交，我们将会打包新的程序，届时会关闭命令行窗口。
