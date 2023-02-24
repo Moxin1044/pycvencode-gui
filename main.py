@@ -14,7 +14,7 @@ height = 315
 # round去掉小数
 window_size = f'{width}x{height}+{round((screen_width-width)/2)}+{round((screen_height-height)/2)}'
 root.geometry(window_size)
-root.resizable(False, False)
+#root.resizable(False, False)
 
 
 def exit_file():
@@ -49,12 +49,12 @@ m.add_cascade(label='关于', menu=about)
 frame0 = Frame(root)
 # 解码
 L1 = Label(frame0, text="需要解码的内容：")
-E1 = Entry(frame0, bd=1, width=48)
+E1 = Entry(frame0, bd=1, width=30)
 
 
 # 编码
 L2 = Label(frame0, text="需要编码的内容：")
-E2 = Entry(frame0, bd=1, width=48)
+E2 = Entry(frame0, bd=1, width=30)
 
 
 def encode():
@@ -87,7 +87,7 @@ E2.grid(row=2, column=2)
 
 frame0.grid(row=1, column=1)
 frame1.grid(row=3, column=1, sticky=E)
-frame2.grid(row=4, column=1, sticky=E)
+frame2.grid(row=4, column=1)
 
 
 t1.grid(row=1, column=1)
